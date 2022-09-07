@@ -23,7 +23,7 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app); // ./routes/authRoutes returns a function then invokes immediately with (app)
 require('./routes/billingRoutes')(app);
-
+//
 if (process.env.NODE_ENV === 'production') {
 	// express will serve production assets like main.js or main.css
 	app.use(express.static('client/build'));
